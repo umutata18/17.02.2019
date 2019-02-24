@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="Boyunuz (cm)"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/txtWeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeight" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:hint="Kilonuz (kg)"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/txtHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:text="Hesapla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="116dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="73dp"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeight">
+
+        <RadioButton
+            android:id="@+id/man"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Erkek" />
+
+        <RadioButton
+            android:id="@+id/woman"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Kadın" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

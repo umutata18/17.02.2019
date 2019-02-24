@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">VucutKitleIndeksi</string>
+    <string name="idealWeight">İdeal Kilonuz</string>
+    <string name="val001">Yaşıyor olamazsın</string>
+    <string name="val002">Zayıf</string>
+    <string name="val003">Normal</string>
+    <string name="val004">Fazla Kilolu</string>
+    <string name="val005">Şişman(Obez) - I.Sınıf</string>
+    <string name="val006">Şişman(Obez) - II.Sınıf</string>
+    <string name="val007">Aşırı Şişman(Aşırı Obez) - III.Sınıf</string>>
+</resources>
